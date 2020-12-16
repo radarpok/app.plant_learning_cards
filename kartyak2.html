@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+
+        <link rel="stylesheet" href="/css/style.prefix.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Natours | Exciting tours for adventurous people</title>
+    </head>
+
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Pure Input Mode</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Guessing Mode</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>High Scores</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link"><span>04</span>Open the Resources</a></li>
+                    </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <img
+                class="header__logo-box"
+                src="img/plant.png"
+                alt="Toggle Dark/Light mode"
+                button onclick="myFunction()"
+                ></button>
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Horticulture</span>
+                    <span class="heading-primary--sub">memo cards</span>
+                </h1>
+
+                <a href="#card" class="btn btn--white btn--animated">Start now</a>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card" id="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--2">
+                            &nbsp;
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span card__heading-span--2">Pure input / Guessing mode</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>Név (latin):</li>
+                                <li>Név (magyar):</li>
+                                <li>Életforma:</li>
+                                <li>Család:</li>
+                                <li>Gazdanövény:</li>
+                                <li>Rendszertan:</li>
+                                <li>Főtünet:</li>
+                                <li>Kórokozó:</li>
+                            </ul>
+                        </div>
+
+                    <div class="card__side card__side--back card__side--back-2">
+                </div>
+            <div class="card__price-box">
+        <div class="card__cta">
+            <p class="card__price-only">Helyes!</p>
+            <p class="card__price-value">Hedera Helix</p>
+        </div>
+        <a href="#popup" class="btn btn--white">Book now!</a>
+    </div>
+</div>
+</div>
+</div>
+<script>
+    function myFunction(){
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>
+</body>
+</html>
